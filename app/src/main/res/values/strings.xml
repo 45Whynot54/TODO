@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TODO list java</string>
+    <string name="note_hint">Введите текст заметки:</string>
+    <string name="high_priority">Высокий</string>
+    <string name="medium_priority">Средний</string>
+    <string name="low_priority">Низкий</string>
+    <string name="Save">Сохранить</string>
+</resources>

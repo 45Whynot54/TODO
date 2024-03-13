@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity">
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="16dp"
+        android:hint="@string/note_hint"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_margin="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonLow"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/low_priority"
+            android:padding="8dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonMedium"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/medium_priority"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonHigh"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/high_priority"/>
+
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:layout_margin="16dp"/>
+</LinearLayout>
